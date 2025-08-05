@@ -31,8 +31,8 @@ const Header = () => {
 
             {/*Top menu*/}
             <Box sx={{display: 'flex', flexDirection: 'row'}}>
-                <Box sx={{width: '10%', pl: 2}}>
-                    <img src={Logo} alt='BenInk Creative' style={{height: '120px', width: '100%'}} />
+                <Box sx={{width: '11%', pl: 2}}>
+                    <img src={Logo} alt='BenInk Creative' style={{height: '100%', width: '100%'}} />
                 </Box>
                 <Box>
             <Toolbar sx={{ justifyContent: 'center', px: 2, gap: 10}}>
@@ -46,9 +46,18 @@ const Header = () => {
                     <Email />
                 <Typography fontWeight={'bold'}>bencreative@gmail.com</Typography>
                 </Box>
+
+                <Box sx={{display: 'flex', gap: 2}}>
+                <Button sx={{color: 'white',textTransform: 'none', backgroundColor: '#223f8d', "&:hover":{backgroundColor: '#F47F39'}}} >
+                        Log in
+                    </Button>
+                    <Button sx={{color: 'white', textTransform: 'none', backgroundColor: '#223f8d', "&:hover":{backgroundColor: '#F47F39'}}}>
+                        Sign Up
+                    </Button>
+                    </Box>
             </Toolbar>
 
-            {/*Main Menu*/}
+            {/*Main Header*/}
             <Toolbar sx={{ gap: 20, px: 2}}>
                 <Box sx={{display: 'flex', gap:1}}>
                     <NavButton startIcon={<Home />} href="/" color="inherit" underline="none" sx={{ mx: 2 }}>Home</NavButton>
@@ -83,8 +92,7 @@ const Header = () => {
                     <NavButton href="/about" color="inherit" underline="none" sx={{ mx: 2 }}>About</NavButton>
                     <NavButton href="/contact" color="inherit" underline="none" sx={{ mx: 2 }}>Contact</NavButton>
                     <NavButton href="/terms-&-conditions" color="inherit" underline="none" sx={{ mx: 2 }}>Terms & Conditions</NavButton>
-                    <Button sx={{color: 'white',textTransform: 'none', backgroundColor: '#223f8d', "&:hover":{backgroundColor: '#F47F39'}}} >Log in</Button>
-                    <Button sx={{color: 'white', textTransform: 'none', backgroundColor: '#223f8d', "&:hover":{backgroundColor: '#F47F39'}}}>Sign Up</Button>
+                    
                 </Box>
                 <Box>
                     <IconButton><Search sx={{color: '#223F8D', "&:hover":{color: '#F47F39'}}}/> </IconButton>

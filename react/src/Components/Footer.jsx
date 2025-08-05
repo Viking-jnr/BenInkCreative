@@ -17,7 +17,7 @@ const NavButton = styled(Button)({
 const Footer = () => {
     const navigate = useNavigate();
     return (
-        <Box >
+        <Box  >
             <Grid container spacing={10}>
                 <Grid item xs={12} sm={4}>
                     <img src={Logo} alt="Benink Creative" style={{height: '200px', width: '100%'}} onClick={() => navigate('/')} />
